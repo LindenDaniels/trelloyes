@@ -6,8 +6,7 @@ export default function List(props) {
   return (
     <section className='List'>
       <header className='List-header'>
-        <h2 style = {{textDecoration: props.item.checked ? 'line-through' : null, }}>
-        {props.header}</h2>
+        <h2>{props.header}</h2>
       </header>
       <div className='List-cards'>
         {props.cards.map((card) =>
